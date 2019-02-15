@@ -1,2 +1,2 @@
-# WInes-HTML
+# Wines-HTML
 Wines and Food recipes 
