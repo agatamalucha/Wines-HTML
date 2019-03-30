@@ -190,17 +190,21 @@ nav ul li {
 
 .card-text {
   font-size: 14px;
+  color:#bd3c48;
+
 
 }
 
 .card-body {
   background-color: #faeed9;
+  min-height: 140px;
 }
 
-.card-title { 
+.card-title {
+font-family: 'Charm', cursive;
 text-align: center;
 color:#bd3c48; 
-font-weight: 500;
+font-weight: 400;
  }
 
 
@@ -331,4 +335,22 @@ color: brown;
     background-repeat:   no-repeat;
     background-position: center ;
 
+}
+
+.aboutmecontent  {
+
+margin: 30%;
+text-align: center;
+font-size: 200%;
+color:#dedcd9;
+font-family: 'Charm', cursive;
+
+}
+
+.smallcontent {
+font-size: 100%;
+margin: 30% 0% 0% 0%;
+text-align: end;
+color:#dedcd9;
+font-family: 'Charm', cursive;
 }
