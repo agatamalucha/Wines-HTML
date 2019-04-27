@@ -229,7 +229,7 @@ font-weight: 400;
 .maincard h4 { 
     font-family: 'Charm', cursive;
     font-size: 24px;
-    color: #fef6d2; 
+    color: #fef6d2;
 }
 
 /*
@@ -242,6 +242,9 @@ font-weight: 400;
 .page-footer {
   background-color: black;
   padding-left: 5%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
 }
 
@@ -339,13 +342,20 @@ color: brown;
 
 .aboutmecontent  {
 
-margin: 30%;
+margin-left: -8%;
+margin-top: 15%;
+padding-top: 60px;
 text-align: center;
 font-size: 200%;
 color:#dedcd9;
 font-family: 'Charm', cursive;
+}
+
+.aboutmecontent p {
+margin-bottom:10px;
 
 }
+
 
 .smallcontent {
 font-size: 100%;
@@ -353,4 +363,161 @@ margin: 30% 0% 0% 0%;
 text-align: end;
 color:#dedcd9;
 font-family: 'Charm', cursive;
+}
+
+/*----------------------------------------------
+    MOBILE MENU
+------------------------------------------------*/
+
+.mobile-nav {
+    position: relative;
+    color:#fef6d2;
+    font-family: 'Roboto';
+
+    font-size: 30px;
+}
+
+.sidenav-trigger {
+    height: 60px !important;
+    top: -10px;
+    right:-320px;
+
+
+}
+
+.nav-link {
+    color:#b8697;
+    font-family: 'Roboto';
+}
+
+.sidenav-trigger i {
+    font-weight: bold;
+
+}
+
+
+#trigger {
+   font-size: 24px;
+   padding: 10px 0px 10px 0px;
+}
+
+.sidenav li:hover {
+     background: #2f2f2f;
+}
+
+
+.sidenav {
+    background: #191919;
+}
+
+.sidenav li > a {
+    color: white
+}
+
+.sidenav li > a > i {
+    color: white;
+}
+
+/*----------------------------------------------
+    MEDIA QUERIES
+------------------------------------------------*/
+
+
+@media(max-width:1700px) {
+
+
+.aboutmecontent {
+font-size: 30px;
+margin-top: 30%;
+margin-left: 0%;
+}
+}
+
+
+@media( max-width:1536px) {
+.aboutmecontent {
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 0%;
+    }
+}
+
+@media(max-width:1500px) {
+
+
+.aboutmecontent {
+font-size: 30px;
+margin-top: 20%;
+margin-left: 0%;
+}
+}
+
+
+
+@media(max-width:992px) {
+
+.sidebar {
+    display: none;
+}
+.page-footer {
+    padding-left:38%;
+}
+
+.wine_card {
+    width: 70%;
+    margin: auto;
+    margin-bottom:30px;
+}
+
+
+.aboutmecontent {
+    font-size: 30px;
+    margin-top: 60%;
+    margin-left: 10%;
+}
+.sidenav-trigger {
+    height: 60px !important;
+    top: -10px;
+    right:-90%;
+}
+
+}
+
+
+@media(max-width:520px) {
+
+.sidebar {
+    display: none;
+}
+
+.sidebar-wrapper {
+display:none;}
+
+.content {
+    width: 80%;
+    margin: auto;
+    margin-bottom:10%}
+
+.page-footer {
+padding-left:22%;
+}
+.maincard {
+margin-left:0px;
+}
+
+.wine_card {
+    width: 80%;
+    margin: auto;
+    margin-bottom:30px;
+}
+
+.aboutmecontent {
+font-size: 20px;
+margin-top: 30%;
+}
+.sidenav-trigger {
+    height: 60px !important;
+    top: -10px;
+    right:-85%;
+}
 }

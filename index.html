@@ -24,9 +24,7 @@
           integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
     <!-- CSS Files -->
-    <link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet"/>
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="assets/demo/demo.css" rel="stylesheet"/>
+    <link href="assets/css/material-dashboard.css" rel="stylesheet"/>
     <link href="assets/css/custom-styles.css" rel="stylesheet"/>
     <!-- jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -34,15 +32,29 @@
 
 <body id="main_page_body">
 <div class="wrapper ">
+    <!-- MOBILE -->
+    <nav class="mobile-nav">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="trigger">menu</i></a>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="nav-link" href="whitewines.html"> <i class="material-icons" style="color:#fef6d2;">local_bar</i>
+                White Wines </a></li>
+            <li><a class="nav-link" href="redwines.html"> <i class="material-icons" style="color:#bd3c48">local_bar </i>
+                </i> Red Wines</a>
+            </li>
+            <li><a class="nav-link" href="foodrecipes.html"> <i class="material-icons" style="color:#fef6d2">local_dining </i> Food Recipes</a>
+            </li>
+            <li> <a class="nav-link" href="aboutme.html"> <i class="material-icons" style="color: #bd3c48">bookmark </i> About Me</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- MAIN MENU -->
     <div class="sidebar" data-color="purple" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
         <div class="logo">
-            <a href="dashboard.html" class="simple-text logo-normal">
+            <a href="index.html" class="simple-text logo-normal">
                 Wines by Agata
             </a>
         </div>
         <div class="sidebar-wrapper">
-
-
             <ul class="nav">
                 <li class="nav-item ">
                     <a class="nav-link" href="whitewines.html">
@@ -63,36 +75,20 @@
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="Aboutme.html">
+                    <a class="nav-link" href="aboutme.html">
                         <i class="material-icons" style="color: #bd3c48">bookmark</i>
                         <p>About Me </p>
                     </a>
                 </li>
             </ul>
+
         </div>
     </div>
 
-    <div class="main-panel">
-        <!-- Navbar
-          <nav>
-            <div class="nav-wrapper">
 
-              <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-                <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
-                <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
-                <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
-                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Login<i class="material-icons right">arrow_drop_down</i></a></li>
-              </ul>
-            </div>
-          </nav>
-          <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">three</a></li>
-          </ul>-->
-        <!-- End Navbar -->
+
+    <div class="main-panel">
+
 
         <!-- Middle section -->
         <div class="content">
@@ -112,14 +108,22 @@
         <footer class="page-footer">
             <div class="container">
                 <div class="row row-footer">
+
                     <tr>
-                        <a class="footer-text" href="Aboutme.html">
+                        <a class="footer-icon" href="index.html"> <i class="material-icons" style="color: #fef6d2">reply</i>
+                        </a>
+                    </tr>
+                     <tr>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </tr>
+                    <tr>
+                        <a class="footer-text" href="aboutme.html">
                             About Me
                         </a>
                     </tr>
 
                     <tr>
-                        <a class="footer-text" href="#">
+                        <a class="footer-text" href="contact.html">
                             Contact
                         </a>
                     </tr>
@@ -150,10 +154,9 @@
 <!-- Materialize Js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<script>
-    $(".dropdown-trigger").dropdown();
+<script src="assets/js/custom-scripts.js"></script>
 
-</script>
+
 </body>
 
 </html>

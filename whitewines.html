@@ -33,10 +33,31 @@
 
 <body id="main_page_body">
 <div class="wrapper ">
+
+    <!-- Mobile menu-->
+
+    <nav class="mobile-nav">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="trigger">menu</i></a>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="nav-link" href="whitewines.html"> <i class="material-icons" style="color:#fef6d2;">local_bar</i>
+                White Wines </a></li>
+            <li><a class="nav-link" href="redwines.html"> <i class="material-icons" style="color:#bd3c48">local_bar </i>
+                </i> Red Wines</a>
+            </li>
+            <li><a class="nav-link" href="foodrecipes.html"> <i class="material-icons" style="color:#fef6d2">local_dining </i> Food Recipes</a>
+            </li>
+            <li> <a class="nav-link" href="aboutme.html"> <i class="material-icons" style="color: #bd3c48">bookmark </i> About Me</a>
+            </li>
+
+        </ul>
+         </nav>
+
+      <!-- END of Mobile menu-->
+
     <div class="sidebar" data-color="purple" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
 
         <div class="logo">
-            <a href="dashboard.html" class="simple-text logo-normal">
+            <a href="index.html" class="simple-text logo-normal">
                 Wines by Agata
             </a>
         </div>
@@ -61,7 +82,7 @@
                     </a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="dashboard.html">
+                    <a class="nav-link" href="index.html">
                         <i class="material-icons" style="color: #bd3c48">reply</i>
                         <p>Back</p>
                     </a>
@@ -94,7 +115,7 @@
             <div class="container-fluid">
                 <!-- Card image  ROW1 CARD1 -->
                 <div class="row row-table">
-                    <div class="col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <a href="#">
                             <div class="card wine_card">
                                 <!-- Card image -->
@@ -115,7 +136,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card wine_card">
                             <!-- Card image -->
                             <div class="view overlay">
@@ -135,7 +156,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card wine_card">
                             <!-- Card image -->
                             <div class="view overlay">
@@ -156,7 +177,7 @@
                     </div>
                 </div>
                 <div class="row row-table">
-                    <div class="col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card wine_card">
                             <!-- Card image -->
                             <div class="view overlay">
@@ -175,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card wine_card">
                             <!-- Card image -->
                             <div class="view overlay">
@@ -195,7 +216,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card wine_card">
                             <!-- Card image -->
                             <div class="view overlay">
@@ -220,18 +241,21 @@
         <footer class="page-footer">
             <div class="container">
                 <div class="row row-footer">
+                      <tr>
+                        <a class="footer-icon" href="index.html"> <i class="material-icons" style="color: #fef6d2">reply</i>
+                        </a>
+                    </tr>
+                     <tr>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </tr>
                     <tr>
-                        <a class="footer-text" href="https://creative-tim.com/presentation">
+                        <a class="footer-text" href="aboutme.html">
                             About Me
                         </a>
                     </tr>
+
                     <tr>
-                        <a class="footer-text" href="http://blog.creative-tim.com">
-                            Blog
-                        </a>
-                    </tr>
-                    <tr>
-                        <a class="footer-text" href="https://www.creative-tim.com/license">
+                        <a class="footer-text" href="contact.html">
                             Contact
                         </a>
                     </tr>
@@ -260,6 +284,8 @@
         crossorigin="anonymous"></script>
 <!-- Materialize Js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="assets/js/custom-scripts.js"></script>
+
 </body>
 
 </html>
