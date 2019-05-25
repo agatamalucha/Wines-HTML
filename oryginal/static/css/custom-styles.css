@@ -1,0 +1,490 @@
+/*
+ =========================================================
+ * MAIN STYLES
+ =========================================================*/
+
+
+
+body {
+  background-image: url("../img/brown.jpg");
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center ;
+  
+   
+}
+
+
+
+#main_page_body {
+    background-image: url("../img/alc.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center ;
+
+}
+
+a {
+  color: #fef6d2;
+}
+
+
+.plain-element {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/*
+ =========================================================
+ * NAVBAR
+ =========================================================*/
+
+nav {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.nav-wrapper {
+
+
+}
+
+nav ul li {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+ =========================================================
+ * SIDE  BARS
+ =========================================================*/
+
+
+.background-sidewrapper {
+  color:#461901;
+}
+
+/* NAV BAR*/
+
+.btn.btn-white,
+.btn.btn-white:focus,
+.btn.btn-white:hover {
+  background-color: #fec85e;
+  color: #999999;
+}
+
+
+
+
+.btn.btn-just-icon {
+
+    margin-top: 7px;
+    font-size: 24px;
+    height: 25px;
+    min-width: 25px;
+    width: 20px;
+    padding: 7;
+    overflow: hidden;
+    position: relative;
+    line-height: 41px;
+    background-color: transparent;
+     box-shadow: none;
+
+
+}
+
+.btn.btn-fab .material-icons,
+.btn.btn-fab .fa,
+.btn.btn-just-icon .material-icons,
+.btn.btn-just-icon .fa {
+  margin-top: 0;
+  position: absolute;
+  width: 100%;
+  transform: none;
+  left: 0;
+  top: 0;
+  height: 100%;
+  line-height: 30px;
+  font-size: 20px;
+   color:  #fec85e;
+   box-shadow: none;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+  position: relative;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  line-height: 20px;
+  margin-top:10px;
+  margin-left: 5px;
+  color:  #fef6d2;
+}
+
+
+/*
+ =========================================================
+ * CARDS
+ =========================================================*/
+
+
+.card {
+  margin:10px 10px 10px 10px;
+}
+
+.wine_card {
+  width:80%;
+  margin-bottom: 10%;
+
+}
+
+.wine_card:hover {
+  box-shadow: 0 0 5px #fef6d2, 0 0 8px #fec85e;
+}
+
+.card-text {
+  font-size: 14px;
+  color:#bd3c48;
+
+
+}
+
+.card-body {
+  background-color: #faeed9;
+  min-height: 140px;
+}
+
+.card-title {
+font-family: 'Charm', cursive;
+text-align: center;
+color:#bd3c48; 
+font-weight: 400;
+ }
+
+
+
+/*
+=========================================================
+* Middle Section
+=========================================================*/
+
+
+
+
+.maincard {background-color: transparent;
+  margin-top: 40px;
+  margin-left: 40px;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+  border: transparent;
+  }
+
+.maincard h4 { 
+    font-family: 'Charm', cursive;
+    font-size: 24px;
+    color: #fef6d2;
+}
+
+/*
+=========================================================
+* FOOTER
+=========================================================*/
+
+
+
+.page-footer {
+  background-color: black;
+  padding-left: 5%;
+  position: center;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.row-footer a {
+  margin-right: 10px !important;
+  color: #fef6d2;
+}
+
+.footer-text {
+
+}
+
+
+
+/*
+=========================================================
+* FOOD Recipes
+=========================================================*/
+
+.card .horizontal {
+  margin:15px 15px 15px 15px;
+
+
+}
+
+.card {
+ 
+ background-image: url("../img/brown.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center ;
+    max-width: 400px;
+    color: orange;
+
+}
+.card-content  {
+  color: orange;
+  padding: none;
+
+  
+}
+.cardname{
+color: brown;
+
+}
+
+.card-action {
+  background-image: url("../img/brown.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center;
+
+}
+
+.card-stacked .card-content {
+  color: #ffab40;
+  height: 250px;
+
+}
+
+.card-image {
+
+  height:100%;
+  width: 
+}
+
+.col-lg-6 .header {
+  color: #ffab40;
+  text-align: center;
+  font-weight: 15px;
+}
+
+.ingredients {
+  list-style-type: circle;
+  line-height: 1;
+  }
+
+
+
+
+
+/*
+=========================================================
+* ABOUT ME
+=========================================================*/
+
+
+#main_page_body_aboutme {
+   background-image: url("../img/chopping2.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center ;
+
+}
+
+.aboutmecontent  {
+
+margin-left: -8%;
+margin-top: 15%;
+padding-top: 60px;
+text-align: center;
+font-size: 200%;
+color:#dedcd9;
+font-family: 'Charm', cursive;
+}
+
+.aboutmecontent p {
+margin-bottom:10px;
+
+}
+
+
+.smallcontent {
+font-size: 100%;
+margin: 30% 0% 0% 0%;
+text-align: end;
+color:#dedcd9;
+font-family: 'Charm', cursive;
+}
+
+/*----------------------------------------------
+    MOBILE MENU
+------------------------------------------------*/
+
+.mobile-nav {
+    position: relative;
+    color:#fef6d2;
+    font-family: 'Roboto';
+
+    font-size: 30px;
+}
+
+.sidenav-trigger {
+    height: 60px !important;
+    top: -10px;
+    right:-320px;
+
+
+}
+
+.nav-link {
+    color:#b8697;
+    font-family: 'Roboto';
+}
+
+.sidenav-trigger i {
+    font-weight: bold;
+
+}
+
+
+#trigger {
+   font-size: 24px;
+   padding: 10px 0px 10px 0px;
+}
+
+.sidenav li:hover {
+     background: #2f2f2f;
+}
+
+
+.sidenav {
+    background: #191919;
+}
+
+.sidenav li > a {
+    color: white
+}
+
+.sidenav li > a > i {
+    color: white;
+}
+
+/*----------------------------------------------
+    MEDIA QUERIES
+------------------------------------------------*/
+
+
+@media(max-width:1700px) {
+
+
+.aboutmecontent {
+font-size: 30px;
+margin-top: 30%;
+margin-left: 0%;
+}
+}
+
+
+@media( max-width:1536px) {
+.aboutmecontent {
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 0%;
+    }
+}
+
+@media(max-width:1500px) {
+
+
+.aboutmecontent {
+font-size: 30px;
+margin-top: 20%;
+margin-left: 0%;
+}
+}
+
+
+
+@media(max-width:992px) {
+
+.sidebar {
+    display: none;
+}
+.page-footer {
+    padding-left:38%;
+}
+
+.wine_card {
+    width: 70%;
+    margin: auto;
+    margin-bottom:30px;
+}
+
+
+.aboutmecontent {
+    font-size: 30px;
+    margin-top: 60%;
+    margin-left: 10%;
+}
+.sidenav-trigger {
+    height: 60px !important;
+    top: -10px;
+    right:-90%;
+}
+
+}
+
+
+@media(max-width:520px) {
+
+.sidebar {
+    display: none;
+}
+
+.sidebar-wrapper {
+display:none;}
+
+.content {
+    width: 80%;
+    margin: auto;
+    margin-bottom:10%}
+
+.page-footer {
+padding-left:22%;
+}
+.maincard {
+margin-left:0px;
+}
+
+.wine_card {
+    width: 80%;
+    margin: auto;
+    margin-bottom:30px;
+}
+
+.aboutmecontent {
+font-size: 20px;
+margin-top: 30%;
+}
+.sidenav-trigger {
+    height: 60px !important;
+    top: -10px;
+    right:-85%;
+}
+}

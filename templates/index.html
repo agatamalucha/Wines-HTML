@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="dashboard-cards">
+    <div class="row row-winecards">
+
+        <!--           CARD21-->
+        <div class="col-md-6 col-lg-4">
+            <div class="card wine-card">
+                <div class="card-image">
+                    <img src="{{url_for('static', filename='img/pinotnoir.jpg')}}">
+
+                </div>
+                <div class="card-content">
+                    <h4 class="card-title">Les Mougeottes Pinot Noir</h4>
+                    <p> Round and juicy flavors of black cherry and blackcurrant.</p>
+                </div>
+
+            </div>
+        </div>
+        <!--        END CARD 1-->
+
+        <!--           CARD2-->
+        <div class="col-md-6 col-lg-4">
+            <div class="card wine-card">
+                <div class="card-image">
+                    <img src="{{url_for('static', filename='img/pinotnoir.jpg')}}">
+
+                </div>
+                <div class="card-content">
+                    <h4 class="card-title">Les Mougeottes Pinot Noir</h4>
+                    <p> Round and juicy flavors of black cherry and blackcurrant.</p>
+                </div>
+
+            </div>
+        </div>
+        <!--    END CARD2    -->
+
+        <!--           CARD3-->
+        <div class="col-md-6 col-lg-4">
+            <div class="card wine-card">
+                <div class="card-image">
+                    <img src="{{url_for('static', filename='img/pinotnoir.jpg')}}">
+
+                </div>
+                <div class="card-content">
+                    <h4 class="card-title">Les Mougeottes Pinot Noir</h4>
+                    <p> Round and juicy flavors of black cherry and blackcurrant.</p>
+                </div>
+
+            </div>
+        </div>
+<!--    END CARD3    -->
+    </div>
+</div>
+
+{% endblock %}

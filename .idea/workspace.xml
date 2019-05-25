@@ -2,29 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dff86c53-afc2-4991-9477-8226bdd00ebc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/css/custom-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/material-dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/248718-v-900x556.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/add_wine.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/alc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/banofi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/banofi2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/brown.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/casilero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/chopping.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/chopping2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/filety_w_sosie_koperkowym.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/filety_w_sosie_koperkowym2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/green.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/mainfood.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/pickchopping.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/pinotnoir.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/sidebar1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/custom-scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/248718-v-900x556.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/add_wine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/alc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/banofi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/banofi2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/brown.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/casilero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/chopping.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/chopping2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/filety_w_sosie_koperkowym.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/filety_w_sosie_koperkowym2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/green.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/mainfood.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/pickchopping.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/pinotnoir.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/img/sidebar1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/js/custom-scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/css/custom-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/248718-v-900x556.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/add_wine.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/alc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/banofi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/banofi2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/brown.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/casilero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/chopping.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/chopping2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/filety_w_sosie_koperkowym.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/filety_w_sosie_koperkowym2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/green.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/mainfood.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/pickchopping.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/pinotnoir.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/img/sidebar1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oryginal/static/js/custom-scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/sign.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/foodrecipes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sign.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/oryginal/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutme.html" beforeDir="false" afterPath="$PROJECT_DIR$/oryginal/aboutme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/oryginal/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/foodrecipes.html" beforeDir="false" afterPath="$PROJECT_DIR$/oryginal/foodrecipes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redwines.html" beforeDir="false" afterPath="$PROJECT_DIR$/oryginal/redwines.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/custom-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/material-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/oryginal/static/css/material-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/custom-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/custom-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/oryginal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whitewines.html" beforeDir="false" afterPath="$PROJECT_DIR$/oryginal/whitewines.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wines.py" beforeDir="false" afterPath="$PROJECT_DIR$/wines.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,17 +71,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="255">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="18" />
+              <folding>
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/example.html">
+        <entry file="file://$PROJECT_DIR$/static/css/custom-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
+            <state relative-caret-position="204">
+              <caret line="105" column="12" lean-forward="true" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oryginal/redwines.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="834">
+              <caret line="179" column="28" lean-forward="true" selection-start-line="119" selection-start-column="16" selection-end-line="181" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -58,6 +122,11 @@
                 <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#tr#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#12581#12587#0" expanded="true" />
+                <element signature="e#12587#12593#0" expanded="true" />
+                <element signature="e#12593#12599#0" expanded="true" />
+                <element signature="e#12599#12605#0" expanded="true" />
+                <element signature="e#12605#12611#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,8 +137,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -87,6 +156,10 @@
       <find>about</find>
       <find>dashboard.html</find>
       <find>Aboutme</find>
+      <find>260</find>
+      <find>calc</find>
+      <find>foo</find>
+      <find>endi</find>
     </findStrings>
     <replaceStrings>
       <replace>col-md-6 col-lg-4</replace>
@@ -117,8 +190,20 @@
         <option value="$PROJECT_DIR$/redwines.html" />
         <option value="$PROJECT_DIR$/whitewines.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/wines.py" />
+        <option value="$PROJECT_DIR$/oryginal/static/css/custom-styles.css" />
+        <option value="$PROJECT_DIR$/oryginal/static/css/material-dashboard.css" />
+        <option value="$PROJECT_DIR$/static/js/custom-scripts.js" />
+        <option value="$PROJECT_DIR$/static/css/navbar.css" />
+        <option value="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/static/css/sign.css" />
+        <option value="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/sign.html" />
         <option value="$PROJECT_DIR$/templates/example.html" />
+        <option value="$PROJECT_DIR$/oryginal/redwines.html" />
+        <option value="$PROJECT_DIR$/wines.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/custom-styles.css" />
       </list>
     </option>
   </component>
@@ -136,7 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +242,41 @@
             <path>
               <item name="Wines" type="b2602c69:ProjectViewProjectNode" />
               <item name="Wines" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Wines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wines" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Wines" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wines" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Wines" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Projects\Wines" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Wines" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Projects\Wines" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Wines" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Projects\Wines" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -169,11 +287,17 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Wines\assets" />
+      <recent name="C:\Projects\Wines\oryginal" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\Wines\oryginal" />
+      <recent name="C:\Projects\Wines\templates" />
       <recent name="C:\Projects\Wines\static" />
       <recent name="C:\Projects\Wines" />
     </key>
@@ -207,18 +331,18 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14266843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14266843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -259,7 +383,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aboutme.html">
+    <entry file="file://$PROJECT_DIR$/oryginal/aboutme.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1887">
           <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
@@ -282,7 +406,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/oryginal/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="221">
@@ -292,38 +416,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/custom-scripts.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/custom-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redwines.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="248" column="67" selection-start-line="248" selection-start-column="67" selection-end-line="248" selection-end-column="67" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#tr#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12581#12587#0" expanded="true" />
-            <element signature="e#12587#12593#0" expanded="true" />
-            <element signature="e#12593#12599#0" expanded="true" />
-            <element signature="e#12599#12605#0" expanded="true" />
-            <element signature="e#12605#12611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/whitewines.html">
+    <entry file="file://$PROJECT_DIR$/oryginal/whitewines.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
@@ -341,25 +434,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#tr#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foodrecipes.html">
+    <entry file="file://$PROJECT_DIR$/oryginal/foodrecipes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="228" column="67" selection-start-line="228" selection-start-column="67" selection-end-line="228" selection-end-column="67" />
@@ -382,7 +457,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.html">
+    <entry file="file://$PROJECT_DIR$/oryginal/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="111" column="67" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
@@ -405,17 +480,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wines.py">
+    <entry file="file://$PROJECT_DIR$/oryginal/static/css/material-dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="204">
+          <caret line="1054" column="10" selection-start-line="1054" selection-start-column="10" selection-end-line="1327" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/example.html">
+    <entry file="file://$PROJECT_DIR$/oryginal/js/custom-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
+        <state relative-caret-position="102">
+          <caret line="6" column="8" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oryginal/static/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/aboutme.html" />
+    <entry file="file://$PROJECT_DIR$/static/css/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="180" column="18" selection-start-line="180" selection-start-column="18" selection-end-line="180" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oryginal/static/css/custom-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+          <folding>
+            <element signature="e#0#6861#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oryginal/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="24" column="77" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="80" />
           <folding>
             <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -427,6 +530,102 @@
             <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#tr#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap-theme.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/sign.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oryginal/redwines.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="179" column="28" lean-forward="true" selection-start-line="119" selection-start-column="16" selection-end-line="181" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#tr#0;n#div#0;n#div#0;n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#12581#12587#0" expanded="true" />
+            <element signature="e#12587#12593#0" expanded="true" />
+            <element signature="e#12593#12599#0" expanded="true" />
+            <element signature="e#12599#12605#0" expanded="true" />
+            <element signature="e#12605#12611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/custom-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="105" column="12" lean-forward="true" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
         </state>
       </provider>
     </entry>
