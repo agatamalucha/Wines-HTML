@@ -2,6 +2,13 @@
 
 
 {% block content %}
+
+
+<div class="container theme-showcase" role="main">
+      <div class="jumbotron">
+
+        <a type="button" class="btn btn-link" href="{{ url_for('sign') }}">Add wine</a>
+</div>
 <div class="dashboard-cards">
     <div class="row row-winecards">
 
@@ -29,8 +36,8 @@
 
                 </div>
                 <div class="card-content">
-                    <h4 class="card-title">Les Mougeottes Pinot Noir</h4>
-                    <p> Round and juicy flavors of black cherry and blackcurrant.</p>
+                    <h4 class="card-title">{{ wine }}</h4>
+                    <p> {{ description }}</p>
                 </div>
 
             </div>

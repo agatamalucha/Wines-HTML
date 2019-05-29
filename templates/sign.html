@@ -2,21 +2,37 @@
 
 
 {% block content %}
-    <div class="container">
+<div class="container">
 
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Add wine</h2>
-        <div class="form-group">
-          <label for="inputName" class="sr-only">Name</label>
-          <input type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
-        </div>
-        <div class="form-group">
-          <label for="comment" class="sr-only">Comment:</label>
-            <textarea class="form-control" rows="5" id="comment" placeholder="Comment" required></textarea>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign</button>
-      </form>
 
-    </div> <!-- /container -->
+    <div class="dashboard-cards">
+        <div class="row row-winecards"
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card form-card">
+
+                <form class="form-wine" method="post" action="/process">
+                    <div class="form-group">
+                        <label for="inputName" class="sr-only">Wine name</label>
+                        <input type="text" id="inputName" class="form-control" placeholder="Name" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment" class="sr-only">Wine description</label>
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Comment" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Add Wine</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div> <!-- /container -->
 
 {% endblock %}
