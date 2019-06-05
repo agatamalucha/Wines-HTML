@@ -99,6 +99,7 @@ label {
 
 .dashboard-cards {
 width:80%;
+min-height: 200px;
 margin: auto;
 
 }
@@ -106,6 +107,8 @@ margin: auto;
 .wine-card {
 width:85%;
 margin: auto;
+min-height: 350px;
+max-height: 350px;
 }
 
 .form-card {
@@ -113,6 +116,32 @@ width:85%;
 margin: auto;
 }
 
+
+
+.form-card{
+width: 60%;
+height:40%;
+padding: 0 0 0 0;
+background:#222a32;
+border: 3px solid #880000;
+border-radius:8px;
+}
+
+
+.form-fields {
+padding:4%;
+}
+
+.form-control{
+}
+
+.custom-file-label{
+background:#fef6d2;
+color: #fef6d2;
+}
+
+.col-lg-4 {
+min-height: 800x }
 
 /*------------------------------------------------------------------------------
     BUTTONS
@@ -125,9 +154,34 @@ margin:10 10 10 10;
 }
 
 
+.btn-block {
+background:#12161a;
+}
+
+.btn-block:hover,
+.btn-block:active,
+.btn-block:focus {
+background:#880000;
+color: #fef6d2;
+
+}
+
 /*------------------------------------------------------------------------------
-    LOGO
+    FORMS
 ------------------------------------------------------------------------------*/
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #880000;
+    box-shadow: 0 1px 0 0 #880000;
+}
+
+.form-group h6 {
+color:#999999;
+}
+
+#customFile {
+color:#999999;
+}
 
 
 

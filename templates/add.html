@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container">
+
+
+    <div class="dashboard-cards">
+        <div class="row row-winecards"
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card form-card">
+
+                <form class="form-wine" method="post" action="/process">
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <label for="inputName" class="sr-only">Wine name</label>
+                            <input type="text" id="inputName" class="form-control" placeholder="  Wine Name" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment" class="sr-only">Wine description</label>
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Wine Description" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <h6>Upload Image</h6>
+                            <input type="file" class="custom-file-input" id="customFile">
+
+                        </div>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Add Wine</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</div> <!-- /container -->
+
+{% endblock %}
