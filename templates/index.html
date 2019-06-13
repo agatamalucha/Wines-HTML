@@ -5,34 +5,31 @@
 
 
 <div class="container theme-showcase" role="main">
-      <div class="jumbotron">
+    <div class="jumbotron">
 
 
-</div>
-<div class="dashboard-cards">
+    </div>
+    <div class="dashboard-cards">
 
 
+        <div class="row row-winecards">
+            {% for element in listing %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card wine-card">
+                    <div class="card-image">
+                        <img src="{{url_for('static', filename='img/pinotnoir.jpg')}}">
 
-
-
-    <div class="row row-winecards">
-    {% for element in listing %}
-        <div class="col-md-6 col-lg-4">
-            <div class="card wine-card">
-                <div class="card-image">
-                    <img src="{{url_for('static', filename='img/pinotnoir.jpg')}}">
+                    </div>
+                    <div class="card-content">
+                        <h4 class="card-title">{{ element.name }}</h4>
+                        <p> {{ element.description}} </p>
+                    </div>
 
                 </div>
-                <div class="card-content">
-                    <h4 class="card-title">{{element [0] }}</h4>
-                    <p> {{element[1]}} </p>
-                </div>
-
             </div>
+            {% endfor %}
+            <!--    END CARD3    -->
         </div>
-     {% endfor %}
-<!--    END CARD3    -->
     </div>
 </div>
-
-{% endblock %}
+    {% endblock %}

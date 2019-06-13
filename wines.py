@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy  import SQLAlchemy
 
 
@@ -19,10 +19,11 @@ class Wines(db.Model):
 wine_list = [['Les Mougeottes Pinot Noir', 'Good wine'], ['Emotivo Pinot Grigio', 'Nice fresh']]
 
 
+
 @app.route('/')
 def index():
-    listing = wine_list
-    return render_template('index.html', listing=listing)
+    result = Wines.query.all()
+    return render_template('index.html', listing=result)
 
 
 @app.route('/add')
@@ -30,11 +31,17 @@ def add():
     return render_template('add.html')
 
 
-@app.route('/process', methods=['post'])
+@app.route('/process', methods=['POST'])
 def process():
     wine_name = request.form['wine']
     wine_description = request.form['description']
-    return render_template('index.html', wine_name=wine, wine_description=description)
+
+    record_saving = Wines(name= wine_name, description= wine_description)
+
+    db.session.add(record_saving)
+    db.session.commit()
+
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
