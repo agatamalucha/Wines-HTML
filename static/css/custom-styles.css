@@ -161,10 +161,39 @@ background:#12161a;
 .btn-block:hover,
 .btn-block:active,
 .btn-block:focus {
-background:#880000;
-color: #fef6d2;
+    background:#880000;
+    color: #fef6d2;
 
 }
+
+.button-delete {
+    background:transparent;
+    box-shadow:none;
+    box-border:none;
+    right: 0;
+    outline: 0;
+    position: absolute;
+}
+
+.button-delete:hover,
+.button-delete:active,
+.button-delete:focus {
+    background:transparent;
+    box-shadow:none;
+    box-border:none;
+}
+
+
+.button-delete i{
+    color:transparent;
+}
+
+.button-delete i:hover ,
+.button-delete i:active,
+.button-delete i:focus {
+    color:#9f0004;
+}
+
 
 /*------------------------------------------------------------------------------
     FORMS
