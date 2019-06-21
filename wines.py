@@ -49,6 +49,12 @@ def process():
 
 
 
+@app.route('/delete/<wine_id>', methods=['POST', 'GET'])    # post allows send record from html to database
+def delete(wine_id):
+
+    Wines.query.filter_by(id=wine_id).delete()
+    db.session.commit()
+    return redirect(url_for('index'))
 
 
 
