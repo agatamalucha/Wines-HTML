@@ -18,7 +18,9 @@
 <!--            Create separate card -->
             <div class="col-md-6 col-lg-4">
                 <div class="card wine-card">
-                    <a class="btn-floating btn-medium button-delete" href="{{ url_for('delete',wine_id=element.id)}}"><i class="material-icons right">delete_forever</i></a>
+                    <ul>                                                                <!--  EDIT 1. To find correct card using element.ID from Database (Primary key) -->
+                    <li><a class="btn-floating btn-medium button-edit" href="{{ url_for('edit', wine_id=element.id) }}"><i class="material-icons ">edit</i></a></li>
+                    <li><a class="btn-floating btn-medium button-delete" href="{{ url_for('delete',wine_id=element.id)}}"><i class="material-icons right">delete_forever</i></a></li>
                     <div class="card-image">
 
                         <img src="{{url_for('static', filename='img/pinotnoir.jpg')}}">

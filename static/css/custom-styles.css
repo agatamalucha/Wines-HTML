@@ -165,7 +165,9 @@ background:#12161a;
     color: #fef6d2;
 
 }
-
+/*------------------------------------------------------------------------------
+   BUTTON DELETE
+------------------------------------------------------------------------------*/
 .button-delete {
     background:transparent;
     box-shadow:none;
@@ -173,6 +175,7 @@ background:#12161a;
     right: 0;
     outline: 0;
     position: absolute;
+
 }
 
 .button-delete:hover,
@@ -192,6 +195,40 @@ background:#12161a;
 .button-delete i:active,
 .button-delete i:focus {
     color:#9f0004;
+}
+
+/*------------------------------------------------------------------------------
+   BUTTON EDIT
+------------------------------------------------------------------------------*/
+
+.button-edit {
+    background:transparent;
+    box-shadow:none;
+    box-border:none;
+    right: 25px;
+    outline: 0;
+    position: absolute;
+
+
+}
+
+.button-edit:hover,
+.button-edit:active,
+.button-edit:focus {
+    background:transparent;
+    box-shadow:none;
+    box-border:none;
+}
+
+
+.button-edit  i{
+    color:transparent;
+}
+
+.button-edit  i:hover ,
+.button-edit  i:active,
+.button-edit  i:focus {
+    color:black;
 }
 
 

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container">
+
+
+    <div class="dashboard-cards">
+        <div class="row row-winecards"
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card form-card">
+                <!-- EDIT 3. new process, to get info from python , refer to "return" section  new-name=pythonname.ID(from database) -->
+                <!-- Let python backend know which wine to update by passing wine.id, which will become update_selected_wine in wines.py     -->
+                <form class="form-wine" method="post" action="{{url_for('process_edit_to_db', update_selected_wine=edited_wine.id) }}">
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <label for="inputName" class="sr-only">Wine name</label>         <!--  pythonname.column from database                          -->
+                            <input type="text" id="inputName"  name="wine" class="form-control" value="{{edited_wine.name}}" placeholder="Wine Name" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment" class="sr-only">Wine description</label>                                <!--  pythonname.column from database -->
+                            <textarea class="form-control" rows="5" id="comment"   name="description" placeholder="{{edited_wine.description}}" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <h6>Upload Image</h6>
+                            <input type="file" class="custom-file-input" id="customFile">
+
+                        </div>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Edit Wine</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div> <!-- /container -->
+
+{% endblock %}
