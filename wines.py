@@ -3,11 +3,11 @@ import env
 from flask import Flask, render_template, request, redirect, url_for  # flask imports
 from flask_sqlalchemy import SQLAlchemy  # for database initiation
 from werkzeug.utils import secure_filename
-import boto3, botocore
+import boto3, botocore              #
 
 app = Flask(__name__)  # initiate Flask app
 
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')   # system configurations
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
 app.config['S3_BUCKET_NAME'] = os.environ.get('S3_BUCKET_NAME')
 app.config["S3_LOCATION"] = 'http://{}.s3.amazonaws.com/'.format(os.environ.get('S3_BUCKET_NAME'))
@@ -15,19 +15,23 @@ app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 app.config['DEBUG'] = True  # this allow to show any errors in the app
 
 db = SQLAlchemy(app)  # launching of database
-s3 = boto3.client("s3", aws_access_key_id=os.environ.get('AWS_ACCESS_KEY_ID'),
+s3 = boto3.client("s3", aws_access_key_id=os.environ.get('AWS_ACCESS_KEY_ID'),          # system configurations
                   aws_secret_access_key=os.environ.get('AWS_SECRET_ACCESS_KEY'))
 
-ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
+
+ #######    UPLOADING FILE PROCESS    ######
+
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])               # 1. the only file extensions (images) allowed into bucket of files on AWS
 
 
+# 2. Function below is checking if file extensions for files we want to upload belongs to the allowed extensions in the list above
 def allowed_file(filename):
     return '.' in filename and \
-           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS   # converting capital letters into lower key an checking if extension is allowed
 
-
+#3.
 def upload_file_to_s3(file, bucket_name, acl="public-read"):
-    try:
+    try:                                                       # Use "try" function otherwise if sth goes wrong , user won't know if there is any error
 
         s3.upload_fileobj(
             file,
@@ -39,7 +43,7 @@ def upload_file_to_s3(file, bucket_name, acl="public-read"):
             }
         )
 
-    except Exception as e:
+    except Exception as e:                                      # Use "except" to print error on the screen and prevent app from crashing
         print("Something Happened: ", e)
         return e
 
@@ -50,7 +54,7 @@ class Wines(db.Model):  # set up of database table, column names, type of data
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
     description = db.Column(db.String(1000))
-    img_url = db.Column(db.String(1000))
+    img_url = db.Column(db.String(1000))              # image stored in AWS , URL to that image stored in Database in " string "type of data
 
 
 # MAIN VIEW
@@ -80,15 +84,15 @@ def process_add_to_db():
     file = request.files["wine_image"]
 
 
-#### HANDLING IMAGE UPLOAD
-    if "wine_image" not in request.files:
+#### HANDLING IMAGE UPLOAD  - Different scenarios -checks
+    if "wine_image" not in request.files:                     #   if file not processed by html form
         return "No user_file key in request.files"
 
-    if file and allowed_file(file.filename):
-        file.filename = secure_filename(file.filename)
+    if file and allowed_file(file.filename):    # check if allowed extension
+        file.filename = secure_filename(file.filename) # give file a name in S3
         output = upload_file_to_s3(file, app.config["S3_BUCKET_NAME"])
 
-    if file.filename == "":
+    if file.filename == "":                                    # no file choosen
         return "Please select a file"
 ###########################
 
@@ -138,7 +142,7 @@ def delete(wine_id):
 
 
 
-# START APP
+# START APP  and CREATE DATABASE ,IF ONE DOESN'T EXIST
 
 if __name__ == '__main__':
 
