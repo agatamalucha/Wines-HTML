@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}    <!-- add this so we can use wft in bootstrap-->
+
+{% block content %}
+<div class="container">
+
+
+
+    <!-- Default form login-->
+<form class="text-center border border-light p-5 " action="/login" method="POST" >
+
+    <p class="h4 mb-4">Sign in</p>
+
+    {{ form.hidden_tag() }}     <!--# requaet for cross-site forgery token -->
+    {{ wtf.form_field(form.username) }}  <!-- adding username -->
+    {{ wtf.form_field(form.password) }}
+    {{ wtf.form_field(form.remember) }}
+
+    <!-- Sign up button -->
+    <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
+
+</form>
+
+
+
+</div> <!-- /container -->
+
+{% endblock %}

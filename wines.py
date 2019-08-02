@@ -3,9 +3,15 @@ import env
 from flask import Flask, render_template, request, redirect, url_for  # flask imports
 from flask_sqlalchemy import SQLAlchemy  # for database initiation
 from werkzeug.utils import secure_filename
-import boto3, botocore              #
+import boto3, botocore
+from flask_bootstrap import Bootstrap
+from flask_wtf import FlaskForm                               # import stuff from  flask  form so we can use flask forms and validators
+from wtforms import StringField, PasswordField, BooleanField  # import stuff from  flask  form so we can use flask forms and validators
+from wtforms.validators import InputRequired, Email, Length   # import stuff from  flask  form so we can use flask forms and validators
+
 
 app = Flask(__name__)  # initiate Flask app
+Bootstrap(app)         # initiate Bootstrap in order to use WTF flask forms
 
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')   # system configurations
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
@@ -18,8 +24,32 @@ db = SQLAlchemy(app)  # launching of database
 s3 = boto3.client("s3", aws_access_key_id=os.environ.get('AWS_ACCESS_KEY_ID'),          # system configurations
                   aws_secret_access_key=os.environ.get('AWS_SECRET_ACCESS_KEY'))
 
+#########  LOGIN, REGISER ,USER   ######
 
- #######    UPLOADING FILE PROCESS    ######
+class Users(db.Model):
+    id =db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(15), unique=True)
+    email=db.Column(db.String(50), unique=True)
+    password=db.Column(db.String(80))
+
+
+
+
+
+class RegisterForm(FlaskForm):
+    email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), ])
+    username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
+    password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
+
+
+
+class LoginForm(FlaskForm):
+    username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
+    password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
+    remember = BooleanField('remember me')
+
+
+#######    UPLOADING FILE PROCESS    ######
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])               # 1. the only file extensions (images) allowed into bucket of files on AWS
 
@@ -63,9 +93,10 @@ class Wines(db.Model):  # set up of database table, column names, type of data
 # in flask all views are functions -  def
 def index():  # define view function
     result = Wines.query.all()  # result=get all from database; Wines= name of database
+    users = Users.query.all()
 
     # send to html     read html template   name of template in template folder     variables that will be send from python into html
-    return render_template('index.html', listing=result)
+    return render_template('index.html', listing=result, users = users)
 
 
 # ADD FUNCTIONALITY
@@ -73,6 +104,29 @@ def index():  # define view function
 @app.route('/add')  # view that allows user to add wines into database
 def add():
     return render_template('add.html')
+
+# ADD FUNCTIONALITY USER AND LOGIN
+
+@app.route('/register_user', methods=['GET', 'POST'])  # view that allows user to register their login
+def register_user():
+    form = RegisterForm()
+    if form.validate_on_submit():
+        return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
+    return render_template('user.html', form=form)
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+    if form.validate_on_submit():
+        return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
+
+    return render_template('login.html', form=form)
+
+
+
+
+
 
 
 # Function that works inside of "add" view and makes html form connect to database
