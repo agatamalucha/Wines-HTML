@@ -8,6 +8,8 @@ from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm                               # import stuff from  flask  form so we can use flask forms and validators
 from wtforms import StringField, PasswordField, BooleanField  # import stuff from  flask  form so we can use flask forms and validators
 from wtforms.validators import InputRequired, Email, Length   # import stuff from  flask  form so we can use flask forms and validators
+from werkzeug.security import generate_password_hash, check_password_hash  # import function that allow to hash password while inputting it to login or sign in
+from flask_login import login_user, login_required, logout_user
 
 
 app = Flask(__name__)  # initiate Flask app
@@ -28,7 +30,7 @@ s3 = boto3.client("s3", aws_access_key_id=os.environ.get('AWS_ACCESS_KEY_ID'),  
 
 class Users(db.Model):
     id =db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(15), unique=True)
+    username = db.Column(db.String(50), unique=True)
     email=db.Column(db.String(50), unique=True)
     password=db.Column(db.String(80))
 
@@ -38,7 +40,7 @@ class Users(db.Model):
 
 class RegisterForm(FlaskForm):
     email = StringField('email', validators=[InputRequired(), Email(message='Invalid email'), ])
-    username = StringField('username', validators=[InputRequired(), Length(min=4, max=15)])
+    username = StringField('username', validators=[InputRequired(), Length(min=4, max=50)])
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
 
 
@@ -111,7 +113,15 @@ def add():
 def register_user():
     form = RegisterForm()
     if form.validate_on_submit():
-        return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
+        hashed_password =generate_password_hash(form.password.data, method='sha256')
+        new_user= Users(username=form.username.data, email=form.email.data,password=hashed_password)
+        db.session.add(new_user)
+        db.session.commit()
+
+        return render_template('user_view.html')
+
+
+     #   return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
     return render_template('user.html', form=form)
 
 
@@ -119,11 +129,22 @@ def register_user():
 def login():
     form = LoginForm()
     if form.validate_on_submit():
-        return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
+        user= Users.query.filter_by(username=form.username.data).first()
+        if user:
+            if check_password_hash(user.password, form.password.data):
+                return redirect(url_for('index'))
+
+        return '<h1> Invalid username or password </h1>'
+
+        #return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
 
     return render_template('login.html', form=form)
 
-
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('index'))
 
 
 
