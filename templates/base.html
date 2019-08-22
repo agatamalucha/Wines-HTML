@@ -30,9 +30,6 @@
     <!-- jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src="https://surveyjs.azureedge.net/1.0.78/survey.jquery.js"></script>
-    <link href="https://surveyjs.azureedge.net/1.0.78/survey.css" type="text/css" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
 
 
     {% block extrahead %}{% endblock %}
@@ -52,9 +49,9 @@
         <ul class="nav navbar-top-links navbar-right">
             <li><a class='nav-link' href="{{ url_for('add') }}" ><i class="fas fa-wine-glass-alt"></i><b> Add Wine</b></a></li>
             <li><a class='dropdown-trigger nav-link' href='#' data-target='dropdown1' id="user_dropdown"><i
-                    class="fas fa-caret-down"></i><b> User</b></a></li>
-
-
+                    class="fas fa-caret-down"></i><b> {{ current_user.username }} </b></a></li>
+            <li><a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="trigger">menu</i></a>
+            </li>
         </ul>
     </nav>
 
@@ -63,7 +60,7 @@
 
         <li><a href="{{ url_for('login') }}" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
         </li>
-        <li><a href="{{ url_for('login') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        <li><a href="{{ url_for('logout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
         </li>
         <li><a href="{{ url_for('register_user') }}" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
         </li>
@@ -72,8 +69,14 @@
 
     <!-- MOBILE -->
     <ul class="sidenav" id="mobile-demo">
-        <li><a href=""><i class="fas fa-code-branch"></i>
+        <li><a href=""><i class="fas fa-wine-glass-alt"></i>
             Wines</a></li>
+        <li><a href="{{ url_for('login') }}"><i class="fa fa-user fa-fw"></i> Log In</a>
+        </li>
+        <li><a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        </li>
+        <li><a href="{{ url_for('register_user') }}"><i class="fas fa-tasks"></i> Register</a>
+        </li>
 
     </ul>
 
@@ -140,8 +143,6 @@
 <script src="{{url_for('static', filename='js/custom-scripts.js')}}"></script>
 
 
-<!-- Data Tables -->
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 {% block head_js %}
 
 {% endblock head_js %}

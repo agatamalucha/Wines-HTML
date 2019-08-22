@@ -253,10 +253,10 @@ nav ul li:hover, nav ul li:active {
 ------------------------------------------------------------------------------*/
 
 
-@media(max-width:1600px) {
+@media(max-width:1700px) {
     .top-navbar {
         padding-left: 2%;
-        padding-right: 1%;
+        padding-right: 1.5%;
     }
 
     .navbar-header {
@@ -301,18 +301,21 @@ nav ul li:hover, nav ul li:active {
     }
 
     .navbar-header {
-    width: 70%;
+        width: 70%;
     }
     nav a.sidenav-trigger {
         line-height: 1;
     }
 
     nav a.sidenav-trigger i {
-    height: 60px;
-    line-height: 1;
+        height: 60px;
+        line-height: 1;
     }
 
     #trigger {
+        position: relative;
+        top: -10px;
+        left: 24px;
         margin: 10px 0px 10px 0px;
     }
 
