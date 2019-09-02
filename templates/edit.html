@@ -12,7 +12,7 @@
             <div class="card form-card">
                 <!-- EDIT 3. new process, to get info from python , refer to "return" section  new-name=pythonname.ID(from database) -->
                 <!-- Let python backend know which wine to update by passing wine.id, which will become update_selected_wine in wines.py     -->
-                <form class="form-wine" method="post" action="{{url_for('process_edit_to_db', update_selected_wine=edited_wine.id) }}">
+                <form class="form-wine" method="post" action="{{url_for ('wines_blueprint.process_edit_to_db', wines_blueprint.update_selected_wine=edited_wine.id) }}">
                     <div class="form-fields">
                         <div class="form-group">
                             <label for="inputName" class="sr-only">Wine name</label>         <!--  pythonname.column from database                          -->

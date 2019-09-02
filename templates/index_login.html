@@ -21,10 +21,10 @@
                     <ul>
                         <!--  EDIT 1. To find correct card using element.ID from Database (Primary key) -->
                         <li><a class="btn-floating btn-medium button-edit"
-                               href="{{ url_for('edit', wine_id=element.id) }}"><i class="material-icons ">edit</i></a>
+                               href="{{ url_for('wines_blueprint.edit', wine_id=element.id) }}"><i class="material-icons ">edit</i></a>
                         </li>
                         <li><a class="btn-floating btn-medium button-delete"
-                               href="{{ url_for('delete',wine_id=element.id)}}"><i class="material-icons right">delete_forever</i></a>
+                               href="{{ url_for('wines_blueprint.delete',wine_id=element.id)}}"><i class="material-icons right">delete_forever</i></a>
                         </li>
                         <div class="card-image">
 

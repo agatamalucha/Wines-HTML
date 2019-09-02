@@ -47,7 +47,7 @@
             <a class="navbar-brand" href="{{ url_for('index') }}">Wines</a>
         </div>
         <ul class="nav navbar-top-links navbar-right">
-            <li><a class='nav-link' href="{{ url_for('add') }}" ><i class="fas fa-wine-glass-alt"></i><b> Add Wine</b></a></li>
+            <li><a class='nav-link' href="{{ url_for('wines_blueprint.add') }}" ><i class="fas fa-wine-glass-alt"></i><b> Add Wine</b></a></li>
             <li><a class='dropdown-trigger nav-link' href='#' data-target='dropdown1' id="user_dropdown"><i
                     class="fas fa-caret-down"></i><b> {{ current_user.username }} </b></a></li>
             <li><a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="trigger">menu</i></a>
@@ -58,11 +58,11 @@
     <!-- DROPDOWN -->
     <ul id="dropdown1" class="dropdown-content">
 
-        <li><a href="{{ url_for('login') }}" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
+        <li><a href="{{ url_for('users_blueprint.login') }}" id="dropdown_link"><i class="fa fa-user fa-fw"></i> Log In</a>
         </li>
-        <li><a href="{{ url_for('logout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        <li><a href="{{ url_for('users_blueprint.logout') }}" id="dropdown_link"><i class="fas fa-sign-out-alt"></i> Log Out</a>
         </li>
-        <li><a href="{{ url_for('register_user') }}" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
+        <li><a href="{{ url_for('users_blueprint.register_user') }}" id="dropdown_link"><i class="fas fa-tasks"></i> Register</a>
         </li>
 
     </ul>
@@ -71,11 +71,11 @@
     <ul class="sidenav" id="mobile-demo">
         <li><a href=""><i class="fas fa-wine-glass-alt"></i>
             Wines</a></li>
-        <li><a href="{{ url_for('login') }}"><i class="fa fa-user fa-fw"></i> Log In</a>
+        <li><a href="{{ url_for('users_blueprint.login') }}"><i class="fa fa-user fa-fw"></i> Log In</a>
         </li>
-        <li><a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+        <li><a href="{{ url_for('users_blueprint.logout') }}"><i class="fas fa-sign-out-alt"></i> Log Out</a>
         </li>
-        <li><a href="{{ url_for('register_user') }}"><i class="fas fa-tasks"></i> Register</a>
+        <li><a href="{{ url_for('users_blueprint.register_user') }}"><i class="fas fa-tasks"></i> Register</a>
         </li>
 
     </ul>
